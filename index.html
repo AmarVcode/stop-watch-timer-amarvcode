@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
+</head>
+
+<body onload="changedate()">
+    <div class="grid">
+        <h1>Time Is Still Running</h1>
+
+        <div>
+            <div>
+                <h2 id="millisecond"></h2>
+                <h2 id="second"></h2>
+                <h2 id="minute"></h2>
+                <h2 id="hour"></h2>
+                <h2 id="day"></h2>
+                <h2 id="date"></h2>
+                <h2 id="month"></h2>
+                <h2 id="year"></h2>
+            </div>
+            <div>
+                <h2>
+                    MilliSecond
+                </h2>
+                <h2>
+                    Second
+                </h2>
+                <h2>
+                    Minute
+                </h2>
+                <h2>
+                    Hour
+                </h2>
+                <h2>
+                    Day
+                </h2>
+                <h2>
+                    Date
+                </h2>
+                <h2>
+                    Month
+                </h2>
+                <h2>
+                    Year
+                </h2>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="timer">
+<h1 id="settime">
+    0
+</h1>
+<div class="grid-btn">
+    <button onclick="start()" id="started">Start</button>
+    <button onclick="stop()" id="stoped">Stop</button>
+    <button onclick="reset()">Reset</button>
+</div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
